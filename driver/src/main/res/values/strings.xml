@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">Fleet247 Driver</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="distance_matrix_key">AIzaSyDIcHXSSt2yKj28pS8btyYwoTI0E3jm3hU</string>
+    <string name="direction_key">AIzaSyAJadGqKCX8wYyEF3jC2femTqpPqAZDYRA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_km">START KILOMETER</string>
+    <string name="booking_id">Booking Id</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="no_of_passenger">No of Passenger</string>
+    <string name="trip_type">Trip Type</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="payment_status">Payment Status</string>
+    <string name="passenger_name_1">Passenger Name 1</string>
+    <string name="passenger_name_2">Passenger Name 2</string>
+    <string name="passenger_name_3">Passenger Name 3</string>
+    <string name="passenger_name_4">Passenger Name 4</string>
+    <string name="passenger_name_5">Passenger Name 5</string>
+    <string name="passenger_name_6">Passenger Name 6</string>
+    <string name="passenger_contact_1">Passenger Contact 1</string>
+    <string name="passenger_contact_2">Passenger Contact 2</string>
+    <string name="passenger_contact_3">Passenger Contact 3</string>
+    <string name="passenger_contact_4">Passenger Contact 4</string>
+    <string name="passenger_contact_5">Passenger Contact 5</string>
+    <string name="passenger_contact_6">Passenger Contact 6</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="start_booking">Start Booking</string>
+    <string name="passenger_details">Passenger Details</string>
+    <string name="cancellation_reason">Cancellation Reason</string>
+    <string name="dummy_booking_id">ctttndkkdkllsn</string>
+    <string name="dummy_pickup_location">Delhi, India</string>
+    <string name="dummy_drop_location">Haldwani,Uttrakhand India</string>
+    <string name="dummy_no_of_passenger">3</string>
+    <string name="dummy_trip_type">Local  8/80</string>
+    <string name="dummy_payment_type">Prepaid</string>
+    <string name="dummy_cancellation_reason">Sickness</string>
+    <string name="no_amount_collected">No Amount Collected</string>
+    <string name="collapse_text">Collapse</string>
+
+    <string name="upcoming_text">UPCOMING</string>
+    <string name="archived_text">ARCHIVED</string>
+    <string name="current_text">CURRENT</string>
+    <string name="cancelled_text">CANCELLED</string>
+    <string name="booking_text">BOOKINGS</string>
+    <string name="driver_status_active">Active</string>
+    <string name="driver_status_inactive">Inactive</string>
+    <string name="contact_us">Contact Us: +918030656503</string>
+
+    <string name="home_text">Home</string>
+    <string name="profile_text">Profile</string>
+    <string name="turorial_text">Help</string>
+
+    <string name="upcoming_booking_text">Upcoming Booking</string>
+    <string name="archived_booking_text">Archived Booking</string>
+    <string name="cancelled_booking_text">Cancelled Booking</string>
+    <string name="pickup_location_placeholder">%1$s</string>
+
+
+    <string name="navigate_text">Navigate</string>
+    <string name="pickup_text">Trip Details</string>
+    <string name="drop_text">Trip Details</string>
+    <string-array name="booking_status">
+        <item>Start from garage</item>
+        <item>Arrived at Pickup Location</item>
+        <item>Start Trip</item>
+        <item>End Trip</item>
+    </string-array>
+
+    <string name="start_from_garage_text">Start from garage</string>
+    <string name="start_trip_text">Start Trip</string>
+    <string name="end_trip_text">End Trip</string>
+    <string name="otp_text">OTP</string>
+    <string name="dont_receive_otp_text">Didn\'t Received OTP Try signature</string>
+
+    <string name="end_km_text">END KILOMETER *</string>
+    <string name="state_text">STATE TAX*</string>
+    <string name="parking_fee_text">PARKING FEE*</string>
+    <string name="toll_tax_text">TOLL TAX*</string>
+    <string name="others_text">OTHERS*</string>
+    <string name="estimate_garage_distance_text">ESTIMATE GARAGE DISTANCE(km)</string>
+    <string name="estimate_garage_time_text">ESTIMATE TIME TO REACH GARAGE(min)</string>
+
+
+    <string name="cancel_booking_text">Cancel Booking</string>
+    <string name="cancellation_reason_text">Cancellation Reason</string>
+
+
+    <string name="fare_details_text">Fare Details</string>
+    <string name="from_text">From</string>
+    <string name="to_text">To</string>
+    <string name="pickup_date_text">Pickup Date</string>
+    <string name="total_distance_text">Total Distance</string>
+    <string name="total_time_text">Total Time</string>
+    <string name="package_cost_text">Package Cost</string>
+    <string name="extra_km_charge_text">Extra Kms Charge</string>
+    <string name="extra_time_charge_text">Extra Time Charge</string>
+    <string name="parking_text">Parking</string>
+    <string name="toll_tax_billing_text">Toll Tax</string>
+    <string name="others_billing_text">Others</string>
+    <string name="state_tax_text">State Tax</string>
+    <string name="driver_allowance_text">Driver Allowance</string>
+    <string name="gst_text">GST</string>
+    <string name="total_tax">Total</string>
+    <string name="advance_taken_tax">Advance Taken</string>
+    <string name="advance_to_be_taken_from_guest">Amount To Be Taken From Guest</string>
+    <string name="amount_taken_from_guest_text">Amount Taken From Guest</string>
+
+    <string name="collect_amount_text">Collect Amount</string>
+    <string name="trip_completed_text">TRIP COMPLETED</string>
+    <string name="done_text">DONE</string>
+
+
+    <string name="details">Details</string>
+    <string name="language_text">Language</string>
+    <string-array name="preferred_languages">
+        <item>English</item>
+        <item>Hindi</item>
+    </string-array>
+    <string name="language_english">English</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="logout_text">LOGOUT</string>
+
+
+    <string name="welcome_to_app_message">WELCOME TO Fleet247 DRIVER APP</string>
+    <string name="login_text">LOGIN</string>
+    <string name="licence_number_text">CONTACT NUMBER</string>
+    <string name="licence_number_hint">Contact No</string>
+    <string name="password_text">OTP</string>
+    <string name="password_hint">otp</string>
+    <string name="do_login">LOGIN</string>
+    <string name="please_enter_licence_no">Please Enter Licence No</string>
+    <string name="please_enter_password">Please Enter Password</string>
+
+
+    <string name="signature_capture_text">Signature Capture</string>
+    <string name="clear_text">Clear</string>
+    <string name="done_signature_text">Done</string>
+    <string name="signatory_hint">Enter Signatory\'s Name</string>
+    <string name="signatory_unfilled_error">Please Enter Signatory Name</string>
+
+    <string name="battery_optimization_message">Click on Fleet247 Driver -> Don\'t Optimize</string>
+
+
+    <string name="cash_collected_text">Cash Collected</string>
+    <string name="cash_collected_hint">Enter Amount</string>
+    <string name="call_operator_text">Call Operator to get final Amount</string>
+    <string name="enable_location">Enable Location To Continue</string>
+    <string name="resend_otp"><u>RESEND OTP</u></string>
+    <string name="error_text">ERROR</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="trip_details_text">Trip Details</string>
+    <string name="start_from_garage_date_text">Garage Start Time</string>
+    <string name="pickup_time_text">Pickup Time</string>
+    <string name="drop_time_text">Drop Time</string>
+    <string name="no_booking_available">NO BOOKING AVAILABLE</string>
+    <string name="warning">WARNING</string>
+    <string name="not_at_pickup_warning_text">You are not within 500m range of Pickup Loaction.\nDo you want to proceed</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="back_text">Back</string>
+    <string name="enter_cash_collected">Enter Cash Collected</string>
+
+
+</resources>

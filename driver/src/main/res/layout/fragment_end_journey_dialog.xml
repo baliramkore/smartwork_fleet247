@@ -1,0 +1,188 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fleet247.driver.fragment.EndJourneyDialog">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/end_km_input"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:theme="@style/TextLabel"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/end_km"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:inputType = "number"
+                android:textStyle="bold"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:hint="@string/end_km_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/state_tax_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <EditText
+                android:id="@+id/state_tax"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType = "number"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:textColorHint="@color/orangeDark"
+                android:hint="@string/state_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/parking_fee_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+        <EditText
+            android:id="@+id/parking_fee"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:inputType = "number"
+            android:textColor="@color/taxivaxiColorMoreLightGray"
+            android:hint="@string/parking_fee_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/toll_tax_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <EditText
+                android:id="@+id/toll_tax"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType = "number"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:hint="@string/toll_tax_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <EditText
+                android:id="@+id/other_tax"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType = "number"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:hint="@string/others_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <EditText
+                android:id="@+id/estimate_garage_distance"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType = "number"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:hint="@string/estimate_garage_distance_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <EditText
+                android:id="@+id/estimate_estimate_time_to_reach_garage"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType = "number"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:hint="@string/estimate_garage_time_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextLabel"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+            <EditText
+                android:id="@+id/end_otp"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:inputType = "number"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:hint="@string/otp_text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/try_signature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="@string/dont_receive_otp_text"/>
+
+
+        <Button
+            android:id="@+id/endTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/end_trip_text"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textStyle="bold"
+            android:fontFamily="@font/sintonyfamily"
+            android:layout_gravity="center"
+            android:theme="@style/ActionButton"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</ScrollView>

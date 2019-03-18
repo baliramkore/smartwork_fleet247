@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            app:title="@string/signature_capture_text"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <!-- TODO: Update blank fragment layout -->
+        <android.gesture.GestureOverlayView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/signature_screen"
+            android:fadeEnabled="false"
+            android:gestureStrokeType="multiple"
+            android:fadeOffset="10000"
+            android:alwaysDrawnWithCache="true"
+            android:background="@color/backgroundGrey"
+            android:gestureColor="@android:color/holo_blue_dark" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/signature_image"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_layout"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:background="@color/lightGrey">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signatory_hint"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/backgroungBlue"
+                android:padding="3dp"
+                android:fontFamily="@font/sintonyfamily"
+                android:background="@android:color/white"/>
+
+            <EditText
+                android:id="@+id/signatory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/black"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/sintonyfamily"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/save_signature"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/green"
+                android:text="@string/done_signature_text"
+                android:fontFamily="@font/sintonyfamily"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/clear_signature"
+            android:backgroundTint="@color/statusGrey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_text"
+            android:fontFamily="@font/sintonyfamily"
+            android:textColor="@android:color/white"
+            android:layout_gravity="top|right"/>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

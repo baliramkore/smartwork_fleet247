@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/cash_collected_heading"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cash_collected_text"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:elevation="2dp"
+        android:fontFamily="@font/sintonyfamily"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/cash_collected"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:padding="35dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/backgroungBlue"
+        android:background="@android:color/white"
+        android:fontFamily="@font/sintonyfamily"
+        app:layout_constraintTop_toBottomOf="@+id/cash_collected_heading"
+        />
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:id="@+id/payment_received"
+        android:backgroundTint="@color/green"
+        android:text="@string/done_text"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/sintonyfamily"
+        app:layout_constraintTop_toBottomOf="@+id/cash_collected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</LinearLayout>

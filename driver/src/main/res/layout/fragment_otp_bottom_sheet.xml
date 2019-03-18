@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    apps:layout_behavior="@string/bottom_sheet_behavior"
+    tools:context=".fragment.OtpBottomSheet">
+
+    <TextView
+        android:id="@+id/fetching_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Fetching OTP"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"/>
+    <ProgressBar
+        android:id="@+id/otp_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:maxLength="6"
+        android:hint="Enter 6 digit OTP"
+        />
+    <TextView
+        android:id="@+id/time_remaining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/submit_otp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Otp"
+        android:textSize="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="12dp"
+        android:backgroundTint="@color/backgroungBlue"
+        android:textColor="@android:color/white"/>
+
+
+</LinearLayout>

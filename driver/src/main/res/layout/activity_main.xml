@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:keepScreenOn="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/map_container">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.fleet247.driver.activities.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/location_navigate_lay"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            android:translationZ="2dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".82"
+                android:fontFamily="@font/sintonyfamily"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/textBlack"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Delhi,India" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight=".005"
+                android:background="@color/statusGrey" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".175"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/startNavigationButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".16"
+                    android:background="@android:color/white"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/ic_navigation_black_48px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sintonyfamily"
+                    android:gravity="center_horizontal"
+                    android:text="@string/navigate_text"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/maps"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_navigate_lay"
+            tools:context="com.fleet247.driver.activities.MainActivity" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:elevation="25dp"
+            android:orientation="vertical"
+            android:outlineProvider="bounds"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/tripType"
+                style="@style/TopRoundedView"
+                android:layout_width="90dp"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="3dp"
+                android:layout_weight=".15"
+                android:fontFamily="@font/sintonyfamily"
+                android:outlineProvider="bounds"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="@string/pickup_text"
+                android:textColor="@color/textBlack"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/TopLeftBottomRoundedView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight=".35"
+                android:drawableRight="@drawable/ic_call_black_24px"
+                android:fontFamily="@font/sintonyfamily"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                tools:text="Sandeep,Chetan"
+                android:textColor="@color/taxivaxiColorMoreLightGray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tripActionButton"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight=".5"
+                    android:fontFamily="@font/sintonyfamily"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Pick Up point Reached"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:theme="@style/ActionButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

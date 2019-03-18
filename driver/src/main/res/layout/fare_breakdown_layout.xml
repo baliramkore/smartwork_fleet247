@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/booking_id_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/booking_id"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/booking_id_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/booking_id_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        tools:text="AP1234" />
+
+    <TextView
+        android:id="@+id/from_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/from_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/from_value"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/booking_id_value" />
+
+    <TextView
+        android:id="@+id/from_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/booking_id_value"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        tools:text="Delhi" />
+
+    <TextView
+        android:id="@+id/to_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/to_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/from_text" />
+
+    <TextView
+        android:id="@+id/to_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/from_value"
+        tools:text="Haldwani" />
+
+
+    <TextView
+        android:id="@+id/pickup_date_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pickup_date_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pickup_date_value"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/to_text" />
+
+    <TextView
+        android:id="@+id/pickup_date_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/to_value"
+        tools:text="17-05-2017" />
+
+    <TextView
+        android:id="@+id/start_from_garage_date_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_from_garage_date_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/start_from_garage_date_value"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/pickup_date_text" />
+
+    <TextView
+        android:id="@+id/start_from_garage_date_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/pickup_date_value"
+        tools:text="17-05-2017" />
+
+    <TextView
+        android:id="@+id/pickup_time_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pickup_time_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pickup_time_value"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/start_from_garage_date_text" />
+
+    <TextView
+        android:id="@+id/pickup_time_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/start_from_garage_date_value"
+        tools:text="17-05-2017" />
+
+    <TextView
+        android:id="@+id/drop_time_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/drop_time_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/drop_time_value"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/pickup_time_text" />
+
+    <TextView
+        android:id="@+id/drop_time_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/pickup_time_value"
+        tools:text="17-05-2017" />
+
+    <TextView
+        android:id="@+id/total_distance_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance_text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/total_distance_value"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/pickup_date_text"
+         />
+
+    <TextView
+        android:id="@+id/total_distance_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/drop_time_value"
+        tools:text="250km" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08055556" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/total_time_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_time_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/total_distance_text" />
+
+    <TextView
+        android:id="@+id/total_time_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/total_distance_value"
+        tools:text="2hr" />
+
+
+    <TextView
+        android:id="@+id/package_cost_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/package_cost_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/total_time_text" />
+
+    <TextView
+        android:id="@+id/package_cost_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/package_cost_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/others_value"
+        tools:text="1500" />
+
+    <TextView
+        android:id="@+id/extra_km_charge_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/extra_km_charge_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/package_cost_text" />
+
+    <TextView
+        android:id="@+id/extra_km_charge_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/extra_km_charge_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/package_cost_value"
+        tools:text="10" />
+
+    <TextView
+        android:id="@+id/extra_time_charge_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:text="@string/extra_time_charge_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/extra_km_charge_text" />
+
+    <TextView
+        android:id="@+id/extra_time_charge_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/extra_time_charge_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/extra_km_charge_value"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/parking_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/parking_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/extra_time_charge_text" />
+
+    <TextView
+        android:id="@+id/parking_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/parking_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/extra_time_charge_value"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/toll_tax_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/toll_tax_billing_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/parking_text" />
+
+    <TextView
+        android:id="@+id/toll_tax_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/toll_tax_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/parking_value"
+        tools:text="50" />
+
+    <TextView
+        android:id="@+id/state_tax_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/state_tax_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/toll_tax_text" />
+
+    <TextView
+        android:id="@+id/state_tax_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/state_tax_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/toll_tax_value"
+        tools:text="500" />
+    <TextView
+        android:id="@+id/others_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/others_billing_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/state_tax_text" />
+
+    <TextView
+        android:id="@+id/others_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/others_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/total_time_value"
+        tools:text="500" />
+    <TextView
+        android:id="@+id/driver_allowance_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/driver_allowance_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/others_text" />
+
+    <TextView
+        android:id="@+id/driver_allowance_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/driver_allowance_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/total_time_value"
+        tools:text="500" />
+
+    <TextView
+        android:id="@+id/gst_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gst_text"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/driver_allowance_text" />
+
+    <TextView
+        android:id="@+id/gst_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/gst_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/state_tax_value"
+        tools:text="1800" />
+
+
+    <TextView
+        android:id="@+id/total_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_tax"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/gst_text" />
+
+    <TextView
+        android:id="@+id/total_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/total_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/gst_value"
+        tools:text="10000" />
+
+    <TextView
+        android:id="@+id/advance_taken_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/advance_taken_tax"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/total_text" />
+
+    <TextView
+        android:id="@+id/advance_taken_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/advance_taken_text"
+        app:layout_constraintLeft_toRightOf="@+id/center_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/total_value"
+        tools:text="3000 " />
+
+    <TextView
+        android:id="@+id/amount_to_be_taken_from_guest_text"
+        style="@style/BillingTextViewTextTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/advance_to_be_taken_from_guest"
+        app:layout_constraintLeft_toLeftOf="@id/left_guideline"
+        app:layout_constraintRight_toLeftOf="@+id/center_guideline"
+        app:layout_constraintTop_toBottomOf="@id/advance_taken_text" />
+
+    <TextView
+        android:id="@+id/amount_to_be_taken_from_guest_value"
+        style="@style/BillingTextViewValueTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/amount_to_be_taken_from_guest_text"
+        app:layout_constraintLeft_toRightOf="@+id/amount_to_be_taken_from_guest_text"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/advance_taken_value"
+        tools:text="3000" />
+</androidx.constraintlayout.widget.ConstraintLayout>

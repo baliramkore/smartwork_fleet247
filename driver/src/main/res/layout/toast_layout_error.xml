@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/toast_layout_error"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_corner_rectangle"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:elevation="4dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@android:color/holo_red_dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/toast_error_text"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text="@string/error_text"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:fontFamily="@font/sintonyregular"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:id="@+id/toast_error_message"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/sintonyregular"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/toast_error_text"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

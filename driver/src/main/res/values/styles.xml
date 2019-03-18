@@ -1,0 +1,123 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/backgroungBlue</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/sintonyregular</item>
+    </style>
+    <style name="MainActivityTheme" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/statusGrey</item>
+    </style>
+
+    <style name="ActionButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/green</item>
+        <item name="colorButtonNormal">@color/taxivaxiColorMoreLightGray</item>
+        <item name="android:background">@drawable/action_button</item>
+    </style>
+    <style name="PauseResumeButton" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@android:color/holo_red_light</item>
+        <item name="colorButtonNormal">@color/taxivaxiColorMoreLightGray</item>
+        <item name="android:background">@drawable/pause_resume_button</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/textBlack</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/taxivaxiColorMoreLightGray</item>
+        <item name="android:fontFamily">@font/sintonyfamily</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+    <style name="TextLabelSignatureCapture" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/textBlack</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/taxivaxiColorMoreLightGray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/backgroungBlue</item>
+    </style>
+
+    <style name="AppTheme.RoundedCornerMaterialButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/rounded_shape_button</item>
+    </style>
+
+    <style name="ActionButtonRounded" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">@drawable/action_button</item>
+
+    </style>
+
+    <style name="TopLeftBottomRoundedView" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/top_right_bottom_rounded_corner</item>
+    </style>
+    <style name="TopRoundedView" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/top_rounded_corner</item>
+    </style>
+
+    <style name="TransparentInvertedBackground" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/transparent_inverted_background</item>
+    </style>
+
+    <style name="RoundedProgressBackground" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/circular_background</item>
+    </style>
+
+    <style name="TextViewValueTheme" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/sintonyfamily</item>
+        <item name="android:textColor">@color/taxivaxiColorMoreLightGray</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="TextViewKeyTheme" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/sintonyfamily</item>
+        <item name="android:textColor">@color/textBlack</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="ProfileTextViewTheme" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/sintonyfamily</item>
+        <item name="android:textColor">@color/taxivaxiColorMoreLightGray</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+
+    <style name="BillingTextViewValueTheme" parent="Theme.AppCompat.Light">
+        <item name="android:fontFamily">@font/sintonyfamily</item>
+        <item name="android:textColor">@color/taxivaxiColorMoreLightGray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textIsSelectable">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">6dp</item>
+    </style>
+
+    <style name="BillingTextViewTextTheme" parent="BillingTextViewValueTheme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">1dp</item>
+    </style>
+
+    <style name="Showcase" parent="ShowcaseView.Light">
+        <item name="sv_backgroundColor">@color/magenta</item>
+        <item name="sv_detailTextAppearance">@style/ShowcaseDescriptionTheme</item>
+        <item name="sv_titleTextAppearance">@style/ShowcaseTitleTheme</item>
+    </style>
+
+    <style name="ShowcaseTitleTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:fontFamily">@font/sintonybold</item>
+    </style>
+
+    <style name="ShowcaseDescriptionTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:fontFamily">@font/sintonyregular</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGrey">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/trip_completed_lay"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@color/green"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <TextView
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_completed_text"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sintonyfamily"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_amount_text"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/sintonyfamily"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        app:cardCornerRadius="65dp"
+        app:layout_constraintBottom_toBottomOf="@+id/trip_completed_lay"
+        app:layout_constraintLeft_toLeftOf="@id/trip_completed_lay"
+        app:layout_constraintRight_toRightOf="@id/trip_completed_lay">
+
+        <TextView
+            android:id="@+id/to_be_collected_amount"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:text="$99999"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <include
+        android:id="@+id/fare_breakdown_lay"
+        layout="@layout/fare_breakdown_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trip_completed_lay" />
+
+    <TextView
+        android:id="@+id/call_operator_billing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_call_black_24px"
+        android:text="@string/call_operator_text"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:elevation="1dp"
+        android:background="@android:color/white"
+        android:drawablePadding="10dp"
+        style="@style/BillingTextViewValueTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fare_breakdown_lay"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/done_text"
+        android:fontFamily="@font/sintonyfamily"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_operator_billing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">फ्लीट 247 चालक</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_maps">Map</string>
+    <string name="distance_matrix_key">AIzaSyDIcHXSSt2yKj28pS8btyYwoTI0E3jm3hU</string>
+    <string name="direction_key">AIzaSyAJadGqKCX8wYyEF3jC2femTqpPqAZDYRA</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_km">प्रारंभ किलोमीटर</string>
+    <string name="booking_id">बुकिंग संख्या</string>
+    <string name="pickup_location">उठाने की जगह</string>
+    <string name="drop_location">ड्रॉप स्थान</string>
+    <string name="no_of_passenger">यात्री की संख्या</string>
+    <string name="trip_type">यात्रा का प्रकार</string>
+    <string name="payment_type">भुगतान के प्रकार</string>
+    <string name="payment_status">भुगतान की स्थिति</string>
+    <string name="passenger_name_1">यात्री का नाम 1</string>
+    <string name="passenger_name_2">यात्री का नाम 2</string>
+    <string name="passenger_name_3">यात्री का नाम 3</string>
+    <string name="passenger_name_4">यात्री का नाम 4</string>
+    <string name="passenger_name_5">यात्री का नाम 5</string>
+    <string name="passenger_name_6">यात्री का नाम 6</string>
+    <string name="passenger_contact_1">यात्री संपर्क 1</string>
+    <string name="passenger_contact_2">यात्री संपर्क 2</string>
+    <string name="passenger_contact_3">यात्री संपर्क 3</string>
+    <string name="passenger_contact_4">यात्री संपर्क 4</string>
+    <string name="passenger_contact_5">यात्री संपर्क 5</string>
+    <string name="passenger_contact_6">यात्री संपर्क Contact 6</string>
+    <string name="cancel_booking">बुकिंग रद्द करें</string>
+    <string name="start_booking">Start Booking</string>
+    <string name="passenger_details">यात्री विवरण</string>
+    <string name="cancellation_reason">रद्दीकरण कारण</string>
+    <string name="dummy_booking_id">ctttndkkdkllsn</string>
+    <string name="dummy_pickup_location">
+दिल्ली, भारत</string>
+    <string name="dummy_drop_location">हल्दवानी, उत्तराखंड भारत</string>
+    <string name="dummy_no_of_passenger">3</string>
+    <string name="dummy_trip_type">स्थानीय 8/80</string>
+    <string name="dummy_payment_type">प्रीपेड</string>
+    <string name="dummy_cancellation_reason">रोग</string>
+    <string name="no_amount_collected">कोई राशि एकत्र नहीं की गई</string>
+    <string name="collapse_text">बंद करे</string>
+
+    <string name="upcoming_text">आगामी</string>
+    <string name="archived_text">संग्रहीत</string>
+    <string name="current_text">वर्तमान</string>
+    <string name="cancelled_text">रद्द</string>
+    <string name="booking_text">बुकिंग</string>
+    <string name="driver_status_active">सक्रिय</string>
+    <string name="driver_status_inactive">निष्क्रिय</string>
+    <string name="contact_us">हमसे संपर्क करें: +918030656503</string>
+
+    <string name="home_text">होम</string>
+    <string name="profile_text">प्रोफाइल</string>
+    <string name="turorial_text">Help</string>
+
+    <string name="upcoming_booking_text">आगाम बुकिंग</string>
+    <string name="archived_booking_text">संग्रहीत बुकिंग</string>
+    <string name="cancelled_booking_text">रद्द बुकिंग</string>
+
+    <string name="pickup_location_placeholder">%1$s</string>
+
+
+    <string name="navigate_text">नेविगेट</string>
+    <string name="pickup_text">पिक अप</string>
+    <string name="drop_text">ड्रॉप</string>
+    <string-array name="booking_status">
+        <item>गेराज से शुरू करें</item>
+        <item>पिकअप स्थान पर पहुंचे</item>
+        <item>यात्रा शुरू करो</item>
+        <item>अंत यात्रा</item>
+    </string-array>
+
+    <string name="start_from_garage_text">गेराज से शुरू करें</string>
+    <string name="start_trip_text">यात्रा शुरू करोp</string>
+    <string name="end_trip_text">अंत यात्रा</string>
+    <string name="otp_text">OTP</string>
+
+    <string name="end_km_text">अंत किलोगेटर*</string>
+    <string name="state_text">राज्य कर*</string>
+    <string name="parking_fee_text">पार्किंग शुल्क*</string>
+    <string name="toll_tax_text">टोल टैक्स*</string>
+    <string name="others_text">दूसरों टैक्स*</string>
+    <string name="estimate_garage_distance_text">गैरेज दूरी अनुमान(किमी)</string>
+    <string name="estimate_garage_time_text">गैरेज तक पहुंचने के लिए समय (मिनट)</string>
+
+
+    <string name="cancel_booking_text">बुकिंग रद्द करें</string>
+    <string name="cancellation_reason_text">रद्दीकरण कारण</string>
+    <string name="dont_receive_otp_text">ओटीपी प्राप्त नहीं किया हस्ताक्षर का प्रयास करें</string>
+
+
+    <string name="fare_details_text">किराया विवरण</string>
+    <string name="from_text">पिक अप स्थान</string>
+    <string name="to_text">ड्रॉप स्थान</string>
+    <string name="pickup_date_text">पिक अप तारीख</string>
+    <string name="total_distance_text">कुल दूरी</string>
+    <string name="total_time_text">कुल समय</string>
+    <string name="package_cost_text">पैकेज लागत</string>
+    <string name="extra_km_charge_text">अतिरिक्त किलोमीटर चार्ज</string>
+    <string name="extra_time_charge_text">अतिरिक्त समय चार्ज</string>
+    <string name="parking_text">पार्किंग</string>
+    <string name="state_tax_text">राज्य कर</string>
+    <string name="driver_allowance_text">चालक भत्ता</string>
+    <string name="toll_tax_billing_text">टोल टैक्स</string>
+    <string name="others_billing_text">दूसरों टैक्स</string>
+    <string name="gst_text">जीएसटी</string>
+    <string name="total_tax">कुल</string>
+    <string name="advance_taken_tax">अग्रिम लिया गया</string>
+    <string name="advance_to_be_taken_from_guest">अतिथि से लिया जाने वाला राशि</string>
+    <string name="amount_taken_from_guest_text">अतिथि से लिया गया राशि</string>
+
+    <string name="collect_amount_text">राशि एकत्र करें</string>
+    <string name="trip_completed_text">ट्रिप पूर्ण</string>
+    <string name="done_text">ठीक</string>
+
+
+    <string name="details">विवरण</string>
+    <string name="language_text">भाषा</string>
+    <string-array name="preferred_languages">
+        <item>अंग्रेज़ी</item>
+        <item>हिंदी</item>
+    </string-array>
+    <string name="language_english">अंग्रेज़ी</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="logout_text">लोग आउट</string>
+
+
+    <string name="welcome_to_app_message">Fleet247 ड्राइवर एप में आपका स्वागत है</string>
+    <string name="login_text">लॉग इन</string>
+    <string name="licence_number_text">लाइसेंस का नंबर</string>
+    <string name="licence_number_hint">लाइसेंस संख्या</string>
+    <string name="password_text">पेस्वर्ड</string>
+    <string name="password_hint">पेस्वर्ड</string>
+    <string name="do_login">लॉग इन करें</string>
+    <string name="please_enter_licence_no">कृपया लाइसेंस नंबर भरो</string>
+    <string name="please_enter_password">कृप्या पास्वर्ड भरो</string>
+
+
+    <string name="signature_capture_text">हस्ताक्षर कैप्चर</string>
+    <string name="clear_text">मिटाएं</string>
+    <string name="done_signature_text">ठीक</string>
+    <string name="signatory_hint">हस्ताक्षरकर्ता का नाम दर्ज करें</string>
+    <string name="signatory_unfilled_error">कृपया हस्ताक्षरकर्ता नाम दर्ज करें</string>
+
+    <string name="battery_optimization_message">Fleet247 Driver पर क्लिक करें -> ऑप्टमाइज़ ना करें</string>
+
+    <string name="cash_collected_text">नकद एकत्रित</string>
+    <string name="cash_collected_hint">कृपया एकत्रित नकद दर्ज करें</string>
+    <string name="call_operator_text">अंतिम राशि प्राप्त करने के लिए ऑपरेटर को कॉल करें</string>
+    <string name="enable_location">जारी रखने के लिए लोकेशन एनेबल करें</string>
+
+    <string name="resend_otp">Resend OTP</string>
+
+</resources>
